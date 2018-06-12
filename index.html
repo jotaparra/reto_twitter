@@ -28,7 +28,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+            <label>Contador regresivo:</label> 
+            <input disabled size="3" value="140" id="contador"> 
+            <br/> 
+          <textarea class="txt" id="comment" maxlength = "140" placeholder="Añade un comentario..." onKeyDown="contar()" onKeyUp="contar()"></textarea>
+
 				</div>
 			</div>
 			<div class="row">
@@ -45,7 +49,6 @@
 
 	<!-- Script Files -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://use.fontawesome.com/7873633050.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
